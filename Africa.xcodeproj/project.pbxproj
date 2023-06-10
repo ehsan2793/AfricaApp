@@ -31,6 +31,7 @@
 		7C7826A52A34FC3A00668E7B /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C7826A12A34FC3A00668E7B /* locations.json */; };
 		7C7826A82A34FCFC00668E7B /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7826A72A34FCFC00668E7B /* CoverImageView.swift */; };
 		7C7826AB2A350A2200668E7B /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7826AA2A350A2200668E7B /* CoverImageModel.swift */; };
+		7C7826AE2A351FB600668E7B /* CodableBundleExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7826AD2A351FB600668E7B /* CodableBundleExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		7C7826A12A34FC3A00668E7B /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
 		7C7826A72A34FCFC00668E7B /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
 		7C7826AA2A350A2200668E7B /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
+		7C7826AD2A351FB600668E7B /* CodableBundleExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		7C47A63F2A348EEE00F6B104 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				7C7826AC2A351FA200668E7B /* Extention */,
 				7C7826A92A350A0B00668E7B /* Model */,
 				7C7826A62A34FCC700668E7B /* View */,
 				7C7826752A34EBB900668E7B /* App */,
@@ -167,6 +170,14 @@
 				7C7826AA2A350A2200668E7B /* CoverImageModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7C7826AC2A351FA200668E7B /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				7C7826AD2A351FB600668E7B /* CodableBundleExtention.swift */,
+			);
+			path = Extention;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 				7C7826A82A34FCFC00668E7B /* CoverImageView.swift in Sources */,
 				7C7826AB2A350A2200668E7B /* CoverImageModel.swift in Sources */,
 				7C7826792A34ECA400668E7B /* MapView.swift in Sources */,
+				7C7826AE2A351FB600668E7B /* CodableBundleExtention.swift in Sources */,
 				7C47A6412A348EEE00F6B104 /* AfricaApp.swift in Sources */,
 				7C7826772A34EC8600668E7B /* VideoListView.swift in Sources */,
 				7C78267B2A34ECB800668E7B /* GalleryView.swift in Sources */,

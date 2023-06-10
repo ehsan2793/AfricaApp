@@ -14,14 +14,13 @@ struct CoverImageView: View {
 
     var body: some View {
         TabView {
-            ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+            ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { _ in
                 Image("cover-lion")
                     .resizable()
-                .scaledToFit()
+                    .scaledToFit()
             } //: LOOP
         } //: TAB
         .tabViewStyle(PageTabViewStyle())
-        
     }
 }
 
