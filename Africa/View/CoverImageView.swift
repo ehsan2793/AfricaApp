@@ -10,14 +10,16 @@ import SwiftUI
 struct CoverImageView: View {
     // MARK: - PROPERTIES
 
+    let coverImages: [CoverImage]
+
     // MARK: - BODY
 
     var body: some View {
         TabView {
-            ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { _ in
-                Image("cover-lion")
+            ForEach(coverImages) { item in
+                Image(item.name)
                     .resizable()
-                    .scaledToFit()
+                    .scaledToFill()
             } //: LOOP
         } //: TAB
         .tabViewStyle(PageTabViewStyle())
@@ -28,7 +30,7 @@ struct CoverImageView: View {
 
 struct CoverImageView_Previews: PreviewProvider {
     static var previews: some View {
-        CoverImageView()
+        CoverImageView(coverImages: coverImages)
             .previewLayout(.fixed(width: 400, height: 300))
     }
 }
