@@ -24,7 +24,7 @@ struct ContentView: View {
                 ForEach(animals) { animal in
                     AnimalListItemView(animal: animal)
                 }
-            } //: LIST
+            } //: SCROLL
             .navigationTitle("Africa")
             .navigationBarTitleDisplayMode(.large)
         } //: NAVIGATION
