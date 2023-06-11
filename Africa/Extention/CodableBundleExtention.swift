@@ -8,8 +8,9 @@
 import Foundation
 
 let coverImages: [CoverImage] = load("covers.json")
+let aimalModel: [AnimalModel] = load("animals.json")
 
-func load<T: Decodable>(_ filename: String) -> [T] {
+func load<T: Decodable>(_ filename: String) -> T {
     // 1. Locate the json file
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
     else {
@@ -28,7 +29,7 @@ func load<T: Decodable>(_ filename: String) -> [T] {
 
     // 4. Create a property for the decoded data
 
-    guard let loaded = try? decoter.decode([T].self, from: data)
+    guard let loaded = try? decoter.decode(T.self, from: data)
     else {
         fatalError("Could not parase \(filename) from bundle")
     }

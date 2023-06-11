@@ -33,6 +33,7 @@
 		7C7826AB2A350A2200668E7B /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7826AA2A350A2200668E7B /* CoverImageModel.swift */; };
 		7C7826AE2A351FB600668E7B /* CodableBundleExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7826AD2A351FB600668E7B /* CodableBundleExtention.swift */; };
 		7C7826B02A35585400668E7B /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7826AF2A35585400668E7B /* AnimalListItemView.swift */; };
+		7C7826B22A355A4100668E7B /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7826B12A355A4100668E7B /* AnimalModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		7C7826AA2A350A2200668E7B /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
 		7C7826AD2A351FB600668E7B /* CodableBundleExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtention.swift; sourceTree = "<group>"; };
 		7C7826AF2A35585400668E7B /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
+		7C7826B12A355A4100668E7B /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				7C7826AA2A350A2200668E7B /* CoverImageModel.swift */,
+				7C7826B12A355A4100668E7B /* AnimalModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				7C78267D2A34ECD700668E7B /* MainView.swift in Sources */,
 				7C7826A82A34FCFC00668E7B /* CoverImageView.swift in Sources */,
 				7C7826AB2A350A2200668E7B /* CoverImageModel.swift in Sources */,
+				7C7826B22A355A4100668E7B /* AnimalModel.swift in Sources */,
 				7C7826792A34ECA400668E7B /* MapView.swift in Sources */,
 				7C7826AE2A351FB600668E7B /* CodableBundleExtention.swift in Sources */,
 				7C47A6412A348EEE00F6B104 /* AfricaApp.swift in Sources */,
