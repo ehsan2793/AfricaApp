@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     // MARK: - PROPERTIES
 
+    let animals: [Animal]
+
     // MARK: - BODY
 
     var body: some View {
@@ -18,8 +20,12 @@ struct ContentView: View {
                 CoverImageView(coverImages: coverImages)
                     .frame(height: 300)
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                        
+
+                ForEach(animals) { animal in
+                    AnimalListItemView(animal: animal)
+                }
             } //: LIST
+            .border(.green)
             .navigationTitle("Africa")
             .navigationBarTitleDisplayMode(.large)
         } //: NAVIGATION
@@ -30,6 +36,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(animals: animals)
     }
 }

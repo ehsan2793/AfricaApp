@@ -7,7 +7,7 @@
 
 import Foundation
 
-let animalList: [Animal] = load("animals.json")
+let animals: [Animal] = load("animals.json")
 let coverImages: [CoverImage] = load("covers.json")
 
 func load<T: Codable>(_ filename: String) -> T {
@@ -28,8 +28,6 @@ func load<T: Codable>(_ filename: String) -> T {
     let decoter = JSONDecoder()
 
     // 4. Create a property for the decoded data
-    print(1)
-    print(data)
     guard let loaded = try? decoter.decode(T.self, from: data)
     else {
         fatalError("Could not parase \(filename) from bundle")
