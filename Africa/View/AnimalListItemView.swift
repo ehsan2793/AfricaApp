@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AnimalListItemView: View {
     // MARK: - PROPERTIES
-
+    let animal: Animal
     // MARK: - BODY
 
     var body: some View {
@@ -38,8 +38,9 @@ struct AnimalListItemView: View {
 // MARK: - PREVIEW
 
 struct AnimalListItemView_Previews: PreviewProvider {
+    static let animals:[Animal] = animalList
     static var previews: some View {
-        AnimalListItemView()
+        AnimalListItemView(animal: animals[1])
             .previewLayout(.sizeThatFits)
             .padding()
     }
