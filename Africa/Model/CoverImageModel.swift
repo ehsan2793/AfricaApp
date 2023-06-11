@@ -9,5 +9,9 @@ import SwiftUI
 
 struct CoverImage: Codable, Identifiable {
     let id: Int
-    let name: String
+    private let name: String
+    
+    var image: Image {
+        Image(name)
+    }
 }
