@@ -16,13 +16,18 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 CoverImageView(coverImages: coverImages)
                     .frame(height: 300)
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
 
                 ForEach(animals) { animal in
-                    AnimalListItemView(animal: animal)
+                    NavigationLink(
+                        destination: AnimalDetailView(animal: animal),
+                        label: {
+                            AnimalListItemView(animal: animal)
+                        }
+                    ) //: LINK
                 } //: LOOP
             } //: SCROLL
             .navigationTitle("Africa")
