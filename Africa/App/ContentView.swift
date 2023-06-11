@@ -16,7 +16,7 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List {
+            ScrollView {
                 CoverImageView(coverImages: coverImages)
                     .frame(height: 300)
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
@@ -25,7 +25,6 @@ struct ContentView: View {
                     AnimalListItemView(animal: animal)
                 }
             } //: LIST
-            .border(.green)
             .navigationTitle("Africa")
             .navigationBarTitleDisplayMode(.large)
         } //: NAVIGATION
