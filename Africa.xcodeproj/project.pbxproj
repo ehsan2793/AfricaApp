@@ -37,6 +37,7 @@
 		7C7826B42A36311900668E7B /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7826B32A36311900668E7B /* AnimalDetailView.swift */; };
 		7C7826B62A36357300668E7B /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7826B52A36357300668E7B /* HeadingView.swift */; };
 		7C7826C02A3640C200668E7B /* InsetsGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7826BF2A3640C200668E7B /* InsetsGalleryView.swift */; };
+		7C7826C22A369D2E00668E7B /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7826C12A369D2E00668E7B /* InsetFactView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		7C7826B32A36311900668E7B /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
 		7C7826B52A36357300668E7B /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		7C7826BF2A3640C200668E7B /* InsetsGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetsGalleryView.swift; sourceTree = "<group>"; };
+		7C7826C12A369D2E00668E7B /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				7C7826A72A34FCFC00668E7B /* CoverImageView.swift */,
 				7C7826AF2A35585400668E7B /* AnimalListItemView.swift */,
 				7C7826B32A36311900668E7B /* AnimalDetailView.swift */,
+				7C7826C12A369D2E00668E7B /* InsetFactView.swift */,
 				7C7826BF2A3640C200668E7B /* InsetsGalleryView.swift */,
 				7C7826B52A36357300668E7B /* HeadingView.swift */,
 			);
@@ -282,6 +285,7 @@
 				7C47A6432A348EEE00F6B104 /* ContentView.swift in Sources */,
 				7C7826B02A35585400668E7B /* AnimalListItemView.swift in Sources */,
 				7C78267D2A34ECD700668E7B /* MainView.swift in Sources */,
+				7C7826C22A369D2E00668E7B /* InsetFactView.swift in Sources */,
 				7C7826A82A34FCFC00668E7B /* CoverImageView.swift in Sources */,
 				7C7826AB2A350A2200668E7B /* CoverImageModel.swift in Sources */,
 				7C7826B42A36311900668E7B /* AnimalDetailView.swift in Sources */,
