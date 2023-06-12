@@ -38,6 +38,7 @@
 		7C7826B62A36357300668E7B /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7826B52A36357300668E7B /* HeadingView.swift */; };
 		7C7826C02A3640C200668E7B /* InsetsGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7826BF2A3640C200668E7B /* InsetsGalleryView.swift */; };
 		7C7826C22A369D2E00668E7B /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7826C12A369D2E00668E7B /* InsetFactView.swift */; };
+		7C7826C42A369F7600668E7B /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7826C32A369F7600668E7B /* InsetMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		7C7826B52A36357300668E7B /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		7C7826BF2A3640C200668E7B /* InsetsGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetsGalleryView.swift; sourceTree = "<group>"; };
 		7C7826C12A369D2E00668E7B /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
+		7C7826C32A369F7600668E7B /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				7C7826C12A369D2E00668E7B /* InsetFactView.swift */,
 				7C7826BF2A3640C200668E7B /* InsetsGalleryView.swift */,
 				7C7826B52A36357300668E7B /* HeadingView.swift */,
+				7C7826C32A369F7600668E7B /* InsetMapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				7C7826B42A36311900668E7B /* AnimalDetailView.swift in Sources */,
 				7C7826B22A355A4100668E7B /* AnimalModel.swift in Sources */,
 				7C7826792A34ECA400668E7B /* MapView.swift in Sources */,
+				7C7826C42A369F7600668E7B /* InsetMapView.swift in Sources */,
 				7C7826AE2A351FB600668E7B /* CodableBundleExtention.swift in Sources */,
 				7C47A6412A348EEE00F6B104 /* AfricaApp.swift in Sources */,
 				7C7826772A34EC8600668E7B /* VideoListView.swift in Sources */,
