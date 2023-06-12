@@ -16,7 +16,7 @@ struct MainView: View {
                     Text("Browse")
                 }
 
-            VideoListView()
+            VideoListView(vidoes: videos)
                 .tabItem {
                     Image(systemName: "play.rectangle")
                     Text("Watch")

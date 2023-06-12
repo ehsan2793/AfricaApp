@@ -9,6 +9,7 @@ import Foundation
 
 let animals: [Animal] = load("animals.json")
 let coverImages: [CoverImage] = load("covers.json")
+let videos: [Video] = load("videos.json")
 
 func load<T: Codable>(_ filename: String) -> T {
     // 1. Locate the json file
