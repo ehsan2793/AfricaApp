@@ -5,21 +5,22 @@
 //  Created by Ehsan Rahimi on 6/11/23.
 //
 
-import SwiftUI
 import MapKit
+import SwiftUI
 
 struct InsetMapView: View {
     // MARK: - PROPERTIES
-    @State private var region = MKCoordinateRegion (
+
+    @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 6.600286, longitude: 16.4377599),
         span: MKCoordinateSpan(latitudeDelta: 60.0, longitudeDelta: 60.0)
-        )
+    )
 
     // MARK: - BODY
 
     var body: some View {
         Map(coordinateRegion: $region)
-            .overlay {
+            .overlay(
                 NavigationLink(destination: MapView()) {
                     HStack {
                         Image(systemName: "mappin.circle")
@@ -30,14 +31,16 @@ struct InsetMapView: View {
                             .fontWeight(.bold)
                     } //: HSTACK
                     .padding(.vertical, 10)
-                    .padding(.horizontal,14)
+                    .padding(.horizontal, 14)
                     .background(
                         Color.black
                             .opacity(0.4)
                             .cornerRadius(8)
                     )
-                } //:NAVIGATION
-            }
+                } //: NAVIGATION
+                .padding(12)
+                , alignment: .topTrailing
+            )
             .frame(height: 256)
             .cornerRadius(12)
     }
