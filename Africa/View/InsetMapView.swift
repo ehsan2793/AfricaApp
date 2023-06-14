@@ -21,7 +21,7 @@ struct InsetMapView: View {
     var body: some View {
         Map(coordinateRegion: $region)
             .overlay(
-                NavigationLink(destination: MapView()) {
+                NavigationLink(destination: MapView(locations:locations)) {
                     HStack {
                         Image(systemName: "mappin.circle")
                             .foregroundColor(Color.white)

@@ -22,7 +22,7 @@ struct MainView: View {
                     Text("Watch")
                 }
 
-            MapView()
+            MapView(locations:locations)
                 .tabItem {
                     Image(systemName: "map")
                     Text("Map")
