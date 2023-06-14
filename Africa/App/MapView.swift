@@ -16,19 +16,25 @@ struct MapView: View {
         var mapRegion = MKCoordinateRegion(center: mapCoordinate, span: mapZoomLevel)
         return mapRegion
     }()
-    
-
 
     var body: some View {
-        //MARK: - 1 BASIC MAP
+        // MARK: - 1 BASIC MAP
+
 //        Map(coordinateRegion: $region)
-        //MARK: - 2 ADVANCE MAP
-        Map(coordinateRegion: $region, annotationItems: locations, annotationContent: {item in
+
+        // MARK: - 2 ADVANCE MAP
+
+        Map(coordinateRegion: $region, annotationItems: locations, annotationContent: { item in
             // OPTION 1: MARKER: NEW STYLE (always static)
-            MapMarker(coordinate: item.location, tint: .accentColor)
-        })
-        
-        
+//            MapMarker(coordinate: item.location, tint: .accentColor)
+            // OPTION 2: BASIC ANNOTATION
+//            MapAnnotation(coordinate: item.location, content: {
+//                Image("logo")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 32, height: 32, alignment: .center)
+//            }) //: ANNOTATION
+          })
     }
 }
 
