@@ -21,6 +21,18 @@ struct ContentView: View {
     //: MARK: - FUNCTIONS
     func gridSwitch() {
         gridLayout = Array(repeating: .init(.flexible()), count: gridLayout.count % 3 + 1)
+        gridColumn = gridLayout.count
+        switch gridColumn {
+        case 1:
+            toolbarIcon = "square"
+        case 2:
+            toolbarIcon = "square.grid.2x2"
+
+        case 3:
+            toolbarIcon = "square.grid.3x2"
+        default:
+            toolbarIcon = "square.grid.2x2"
+        }
     }
 
     // MARK: - BODY
@@ -78,9 +90,10 @@ struct ContentView: View {
                                 print("grid view")
                                 heptics.impactOccurred()
                                 isGridViewActive = true
+                                gridSwitch()
                             },
                             label: {
-                                Image(systemName: "square.grid.2x2")
+                                Image(systemName: toolbarIcon)
                                     .font(.title2)
                                     .foregroundColor(isGridViewActive ? .accentColor : .primary)
                             }
