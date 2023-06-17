@@ -24,13 +24,13 @@ struct GalleryView: View {
     // EFFICENT GRID DEFINATION
 
 //    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 3)
-    
-    //DAYNAMIC GRID LAYOUT
-    
+
+    // DAYNAMIC GRID LAYOUT
+
     @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
-    @State private var gridColumn: Double =  3.0
-    
-    func gridSwitch()  {
+    @State private var gridColumn: Double = 3.0
+
+    func gridSwitch() {
         gridLayout = Array(repeating: .init(.flexible()), count: Int(gridColumn))
     }
 
@@ -46,11 +46,13 @@ struct GalleryView: View {
                     .scaledToFit()
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                //MARK: - SLIDER
+
+                // MARK: - SLIDER
+
                 Slider(value: $gridColumn, in: 2 ... 4, step: 1)
                     .padding(.horizontal)
                     .onChange(of: gridColumn, perform: {
-                        value in gridSwitch()
+                        _ in gridSwitch()
                     })
 
                 // MARK: - GRID
@@ -68,7 +70,8 @@ struct GalleryView: View {
                             }
                     } //: LOOP
                 } //: GRID
-                .animation(.easeIn)
+
+                .animation(Animation.easeInOut(duration: 3), value: gridColumn)
                 .onAppear(perform: {
                     gridSwitch()
                 })
