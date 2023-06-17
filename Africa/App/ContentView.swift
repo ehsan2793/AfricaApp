@@ -14,7 +14,14 @@ struct ContentView: View {
     let heptics = UIImpactFeedbackGenerator(style: .medium)
     @State private var isGridViewActive: Bool = false
 
-    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
+    @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
+    @State private var gridColumn: Int = 1
+    @State private var toolbarIcon: String = "square.grid.2x2"
+
+    //: MARK: - FUNCTIONS
+    func gridSwitch() {
+        gridLayout = Array(repeating: .init(.flexible()), count: gridLayout.count % 3 + 1)
+    }
 
     // MARK: - BODY
 
@@ -29,7 +36,7 @@ struct ContentView: View {
 
                         ForEach(animals) { animal in
                             NavigationLink(
-                                destination: AnimalDetailView(animal: animal))           {
+                                destination: AnimalDetailView(animal: animal)) {
                                     AnimalListItemView(animal: animal)
                                 } //: LINK
                         } //: LOOP
@@ -40,13 +47,12 @@ struct ContentView: View {
                             ForEach(animals) { animal in
                                 NavigationLink(destination: AnimalDetailView(animal: animal)) {
                                     AnimalGridItemView(animal: animal)
-                                    
-                                } //:NAVIGATION
-                            }//:LOOP
+                                } //: NAVIGATION
+                            } //: LOOP
                         } //: GRID
                         .padding(10)
                         .animation(Animation.easeIn, value: isGridViewActive)
-                    }//:SCROLL
+                    } //: SCROLL
                 } //: CONDITION
             } //: GROUP
             .navigationTitle("Africa")
