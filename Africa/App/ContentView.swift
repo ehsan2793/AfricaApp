@@ -14,6 +14,8 @@ struct ContentView: View {
     let heptics = UIImpactFeedbackGenerator(style: .medium)
     @State private var isGridViewActive: Bool = false
 
+    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 2)
+
     // MARK: - BODY
 
     var body: some View {
@@ -27,15 +29,24 @@ struct ContentView: View {
 
                         ForEach(animals) { animal in
                             NavigationLink(
-                                destination: AnimalDetailView(animal: animal),
-                                label: {
+                                destination: AnimalDetailView(animal: animal))           {
                                     AnimalListItemView(animal: animal)
-                                }
-                            ) //: LINK
+                                } //: LINK
                         } //: LOOP
                     } //: SCROLL
                 } else {
-                    Text("grid view is active")
+                    ScrollView(.vertical, showsIndicators: true) {
+                        LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
+                            ForEach(animals) { animal in
+                                NavigationLink(destination: AnimalDetailView(animal: animal)) {
+                                    AnimalGridItemView(animal: animal)
+                                    
+                                } //:NAVIGATION
+                            }//:LOOP
+                        } //: GRID
+                        .padding(10)
+                        .animation(Animation.easeIn, value: isGridViewActive)
+                    }//:SCROLL
                 } //: CONDITION
             } //: GROUP
             .navigationTitle("Africa")
