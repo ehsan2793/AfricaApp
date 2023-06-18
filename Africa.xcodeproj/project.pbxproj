@@ -49,7 +49,7 @@
 		7C97F6082A36D555006226D0 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C97F6072A36D555006226D0 /* VideoModel.swift */; };
 		7C97F60A2A36D6C4006226D0 /* VideoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C97F6092A36D6C4006226D0 /* VideoListItem.swift */; };
 		7CE314A72A3EF040002BA097 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE314A62A3EF040002BA097 /* Stickers.xcassets */; };
-		7CE314AB2A3EF040002BA097 /* stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7CE314A42A3EF03F002BA097 /* stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7CE314AB2A3EF040002BA097 /* stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7CE314A42A3EF03F002BA097 /* stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7CE314B12A3EF22B002BA097 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE314B02A3EF22B002BA097 /* CreditsView.swift */; };
 		7CE314B42A3EF3D7002BA097 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE314B32A3EF3D7002BA097 /* CenterModifier.swift */; };
 /* End PBXBuildFile section */
@@ -127,6 +127,7 @@
 		7CE314A82A3EF040002BA097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CE314B02A3EF22B002BA097 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		7CE314B32A3EF3D7002BA097 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
+		7CE314B52A3EF649002BA097 /* Africa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Africa.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +162,7 @@
 		7C47A63F2A348EEE00F6B104 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				7CE314B52A3EF649002BA097 /* Africa.entitlements */,
 				7CE314B22A3EF3A6002BA097 /* Modifier */,
 				7C7C470D2A37F2A1008CECF6 /* Helper */,
 				7C7826AC2A351FA200668E7B /* Extention */,
@@ -446,6 +448,7 @@
 /* Begin PBXTargetDependency section */
 		7CE314AA2A3EF040002BA097 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 7CE314A32A3EF03F002BA097 /* stickers */;
 			targetProxy = 7CE314A92A3EF040002BA097 /* PBXContainerItemProxy */;
 		};
@@ -571,6 +574,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
@@ -590,6 +594,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanApp.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -601,6 +608,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
@@ -620,6 +628,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanApp.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -640,6 +651,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanApp.Africa.stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -659,6 +671,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ehsanApp.Africa.stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
