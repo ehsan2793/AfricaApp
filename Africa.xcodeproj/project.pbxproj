@@ -50,6 +50,8 @@
 		7C97F60A2A36D6C4006226D0 /* VideoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C97F6092A36D6C4006226D0 /* VideoListItem.swift */; };
 		7CE314A72A3EF040002BA097 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE314A62A3EF040002BA097 /* Stickers.xcassets */; };
 		7CE314AB2A3EF040002BA097 /* stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7CE314A42A3EF03F002BA097 /* stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7CE314B12A3EF22B002BA097 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE314B02A3EF22B002BA097 /* CreditsView.swift */; };
+		7CE314B42A3EF3D7002BA097 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE314B32A3EF3D7002BA097 /* CenterModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +125,8 @@
 		7CE314A42A3EF03F002BA097 /* stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE314A62A3EF040002BA097 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		7CE314A82A3EF040002BA097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CE314B02A3EF22B002BA097 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		7CE314B32A3EF3D7002BA097 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 		7C47A63F2A348EEE00F6B104 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				7CE314B22A3EF3A6002BA097 /* Modifier */,
 				7C7C470D2A37F2A1008CECF6 /* Helper */,
 				7C7826AC2A351FA200668E7B /* Extention */,
 				7C7826A92A350A0B00668E7B /* Model */,
@@ -237,6 +242,7 @@
 				7C56262E2A3965950093368D /* MapAnnotationView.swift */,
 				7C430CB62A3A9A3F00973BC7 /* MotionAnimationView.swift */,
 				7C08C8482A3D691C00CC2D24 /* AnimalGridItemView.swift */,
+				7CE314B02A3EF22B002BA097 /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -282,6 +288,14 @@
 				7CE314A82A3EF040002BA097 /* Info.plist */,
 			);
 			path = stickers;
+			sourceTree = "<group>";
+		};
+		7CE314B22A3EF3A6002BA097 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				7CE314B32A3EF3D7002BA097 /* CenterModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,8 +432,10 @@
 				7C08C8492A3D691C00CC2D24 /* AnimalGridItemView.swift in Sources */,
 				7C7826772A34EC8600668E7B /* VideoListView.swift in Sources */,
 				7C78267B2A34ECB800668E7B /* GalleryView.swift in Sources */,
+				7CE314B12A3EF22B002BA097 /* CreditsView.swift in Sources */,
 				7C97F60A2A36D6C4006226D0 /* VideoListItem.swift in Sources */,
 				7C430CB72A3A9A3F00973BC7 /* MotionAnimationView.swift in Sources */,
+				7CE314B42A3EF3D7002BA097 /* CenterModifier.swift in Sources */,
 				7C7826B62A36357300668E7B /* HeadingView.swift in Sources */,
 				7C7826C02A3640C200668E7B /* InsetsGalleryView.swift in Sources */,
 			);
